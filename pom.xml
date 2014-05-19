@@ -7,7 +7,7 @@
 	<artifactId>xls2drl-print-maven-plugin</artifactId>
 	<version>1.0.0</version>
 	<description>Maven plugin for changing the decision table of Excel into DRL and displaying it.</description>
-	<url>TODO</url>
+	<url>https://github.com/mas0061/xls2drl-print-maven-plugin</url>
 	<licenses>
 		<license>
 			<name>MIT License</name>
@@ -16,9 +16,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<url></url>
-		<connection></connection>
-		<developerConnection></developerConnection>
+		<url>scm:git:git@github.com:mas0061/xls2drl-print-maven-plugin.git</url>
+		<connection>scm:git:git@github.com:mas0061/xls2drl-print-maven-plugin.git</connection>
+		<developerConnection>scm:git:git@github.com:mas0061/xls2drl-print-maven-plugin.git</developerConnection>
 	</scm>
 	<developers>
 		<developer>
