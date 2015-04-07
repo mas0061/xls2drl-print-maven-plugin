@@ -16,8 +16,8 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>scm:git:git@github.com:mas0061/xls2drl-print-maven-plugin.git</url>
-		<connection>scm:git:git@github.com:mas0061/xls2drl-print-maven-plugin.git</connection>
+		<url>scm:https://github.com/mas0061/xls2drl-print-maven-plugin.git</url>
+		<connection>scm:https://github.com/mas0061/xls2drl-print-maven-plugin.git</connection>
 		<developerConnection>scm:git:git@github.com:mas0061/xls2drl-print-maven-plugin.git</developerConnection>
 	</scm>
 	<developers>
@@ -89,6 +89,37 @@
 						<encoding>UTF-8</encoding>
 						<source>1.7</source>
 						<target>1.7</target>
+					</configuration>
+				</plugin>
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.apache.maven.plugins
+										</groupId>
+										<artifactId>
+											maven-plugin-plugin
+										</artifactId>
+										<versionRange>
+											[3.2,)
+										</versionRange>
+										<goals>
+											<goal>helpmojo</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
 					</configuration>
 				</plugin>
 			</plugins>
