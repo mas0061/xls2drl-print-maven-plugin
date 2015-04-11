@@ -18,14 +18,29 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.drools.decisiontable.InputType;
 import org.drools.decisiontable.SpreadsheetCompiler;
 
+/**
+ * Xls2DrlPrintMojo is class of Maven plugin.
+ * This is plugin for changing the decision table of Excel into DRL and displaying it.
+ *
+ * @author mas0061
+ * @version 1.0.0
+ */
 @Mojo(name = "print", threadSafe = true)
 @Execute(goal = "print", phase = LifecyclePhase.PROCESS_SOURCES)
 public class Xls2DrlPrintMojo extends AbstractMojo {
+	/**
+	 * When this parameter is established,
+	 * it's possible to change the directory in which a decision table of a target exists.
+	 */
 	@Parameter(defaultValue = "src/main/resources", required = true)
 	private File resourceDirectory;
 
 	private static final String XLS_MIME_TYPE = "application/vnd.ms-excel";
 
+	/**
+	 * Plugin main method
+	 * @throws MojoExecutionException some error...
+	 */
 	@Override
 	public void execute() throws MojoExecutionException {
 		Path path = resourceDirectory.toPath();
