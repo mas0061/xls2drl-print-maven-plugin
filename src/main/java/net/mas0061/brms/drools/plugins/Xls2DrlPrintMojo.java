@@ -19,7 +19,7 @@ import org.drools.decisiontable.InputType;
 import org.drools.decisiontable.SpreadsheetCompiler;
 
 @Mojo(name = "print", threadSafe = true)
-@Execute(goal = "print", phase = LifecyclePhase.PROCESS_SOURCES)
+@Execute(goal = "print", phase = LifecyclePhase.PROCESS_RESOURCES)
 public class Xls2DrlPrintMojo extends AbstractMojo {
 	@Parameter(defaultValue = "src/main/resources", required = true)
 	private File resourceDirectory;
